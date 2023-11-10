@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<star>
+ <name>
+  Полярная звезда 4326
+ </name>
+ <constellation>
+  Стрелец
+ </constellation>
+ <spectral-class>
+  M0U
+ </spectral-class>
+ <radius>
+  500389422
+ </radius>
+ <rotation>
+  14.54 days
+ </rotation>
+ <age>
+  3.22 billion years
+ </age>
+ <distance>
+  8745884.3 million km
+ </distance>
+ <absolute-magnitude>
+  3.5 million km
+ </absolute-magnitude>
+</star>
