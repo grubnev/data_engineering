@@ -25,11 +25,10 @@ def handle_file(file_name):
         item['rating'] = float(site.find_all("span", string=re.compile("Рейтинг:"))[0].get_text().split(":")[1].strip())
         item['views'] = int(site.find_all("span", string=re.compile("Просмотры:"))[0].get_text().split(":")[1].strip())
 
-        print(item)
         return item
 
 items = []
-for i in range(1,999):
+for i in range(1,1000):
     file_name = f"zip_var_36(1)/{i}.html"
     result = handle_file(file_name)
     items.append(result)

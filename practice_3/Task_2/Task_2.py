@@ -28,7 +28,7 @@ def handle_file(file_name):
     return items
 
 items = []
-for i in range(1, 40):
+for i in range(1, 41):
     file_name = f"zip_var_36(2)/{i}.html"
     items += handle_file(file_name)
 
