@@ -22,10 +22,8 @@ def replace_na_with_mean(numbers):
             elif right_idx < len(numbers):
                 numbers[i] = numbers[right_idx]
 
-input_filename = 'text_3_var_36'
-output_filename = 'result_3.txt'
 
-with open(input_filename, 'r') as infile, open(output_filename, 'w') as outfile:
+with open('text_3_var_36', 'r') as infile, open('result_3.txt', 'w') as outfile:
     for line in infile:
         numbers = line.strip().split(',')
 

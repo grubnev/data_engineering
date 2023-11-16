@@ -17,11 +17,9 @@ def count_word_frequency(filename):
 
     return sorted_word_frequency
 
-filename = 'text_1_var_36'
-output_filename = 'result_1.txt'
 
-word_frequency = count_word_frequency(filename)
+word_frequency = count_word_frequency('text_1_var_36')
 
-with open(output_filename, 'w', encoding='utf-8') as outfile:
+with open('result_1.txt', 'w', encoding='utf-8') as outfile:
     for word, frequency in word_frequency:
         outfile.write(f"{word}:{frequency}\n")

@@ -14,8 +14,6 @@ def filter_by_age(rows):
     filtered_rows = [row for row in rows if row[2].isdigit() and int(row[2]) > 25 + 36 % 10]
     return filtered_rows
 
-input_filename = 'text_4_var_36'
-output_filename = 'result_4.txt'
 
 with open('text_4_var_36', 'r', newline='', encoding="utf-8") as csvfile:
     reader = csv.reader(csvfile)
