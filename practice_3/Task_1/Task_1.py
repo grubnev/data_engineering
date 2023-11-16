@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+import numpy as np
 import re
 import json
 
@@ -43,5 +44,26 @@ for building in items:
     if building['rating'] >= 2:
         filtered_items.append((building))
 
-print(len(items))
-print(len(filtered_items))
+print("Всего элементов:", len(items))
+print("Фильтрация элементов:", len(filtered_items))
+
+views_array = np.array([item['views'] for item in items])
+
+print("Максимальное значение Views:", np.max(views_array))
+print("Минимальное значение Views:", np.min(views_array))
+print("Сумма значений Views:", np.sum(views_array))
+print("Среднее арифметическое значений Views:", np.mean(views_array))
+
+city_array = np.array([item['city'] for item in items])
+
+word_frequency = {}
+for word in city_array:
+    if word in word_frequency:
+        word_frequency[word] += 1
+    else:
+        word_frequency[word] = 1
+
+sorted_word_frequency = sorted(word_frequency.items(), key=lambda x: x[1], reverse=True)
+
+print(sorted_word_frequency)
+
