@@ -11,14 +11,14 @@ def handle_file(file_name):
             text += row
 
         site = BeautifulSoup(text, 'html.parser')
-        products = site.find_all("div", attrs={'class': 'block visible'})
-
+        products = site.find_all("div", attrs={'class': 'block visible'}) + site.find_all("div", attrs={'class': 'block loaded visible'})
         item = dict()
         for product in products:
             item['title'] = product.find_all("a")[0].get_text().strip()
             item['price'] = int(product.find_all("div", attrs={'class': 'price'})[0].get_text().replace(" Р.", "").strip())
             item['delivery'] = product.find_all("div", attrs={'class': 'delivery'})[0].get_text().replace('<span class="icon-truck"></span>', "").strip()
-        items.append(item)
+
+            items.append(item)
     return item
 
 items = []
@@ -27,12 +27,13 @@ for i in range(1, 6):
     result = handle_file(file_name)
     items.append(result)
 del items[-1]
-del items[-1]
+
 #Сортировка по price
 
+print(items)
 items = sorted(items, key=lambda x: x['price'], reverse=True)
 
-#Определяем количество продуктов стоимость которых больше 100 000р
+#Определяем количество продуктов стоимость которых больше 500р
 filtered_items = []
 for product in items:
     if product['price'] > 500:

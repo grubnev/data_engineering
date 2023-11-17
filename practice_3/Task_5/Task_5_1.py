@@ -11,11 +11,16 @@ def handle_file(file_name):
             text += row
 
         site = BeautifulSoup(text, 'html.parser')
-        parameters = site.find_all('div', attrs={"class":"row"})
+        rows = site.find_all('div', attrs={"class":"row"})
 
         item = dict()
         item['title'] = site.find_all('h1')[0].get_text()
         item['price'] = int(site.find_all('span', attrs={"itemprop": "price"})[0].get_text())
+
+        for row in rows:
+            key = row.find('div', class_='col').text.strip()
+            value = row.find('div', class_='col').find_next('div', class_='col').text.strip()
+            item[key] = value
 
         return item
 
@@ -25,33 +30,33 @@ for i in range(1, 26):
     result = handle_file(file_name)
     items.append(result)
 
-# Сортировка по views
+# Сортировка по price
 
 items = sorted(items, key=lambda x: x['price'], reverse=True)
 
 with open("result_all_5.1.json", "w", encoding="utf-8") as f:
     f.write(json.dumps(items))
 
-# Определяем количество строений рейтинг которых больше 2
+# Определяем количество товаров стоимость которых больше 100
 
 filtered_items = []
 for building in items:
-    if building['price'] > 1000:
-        filtered_items.append((building))
+    if building['price'] > 100:
+        filtered_items.append(building)
 
 print("Всего элементов:", len(items))
 print("Фильтрация элементов:", len(filtered_items))
 
-# Статистические характеристики для views
+# Статистические характеристики для price
 
 views_array = np.array([item['price'] for item in items])
 
-print("Максимальное значение Views:", np.max(views_array))
-print("Минимальное значение Views:", np.min(views_array))
-print("Сумма значений Views:", np.sum(views_array))
-print("Среднее арифметическое значений Views:", np.mean(views_array))
+print("Максимальное значение price:", np.max(views_array))
+print("Минимальное значение price:", np.min(views_array))
+print("Сумма значений price:", np.sum(views_array))
+print("Среднее арифметическое значений price:", np.mean(views_array))
 
-# Частота меток city
+# Частота меток price
 
 city_array = np.array([item['price'] for item in items])
 
