@@ -11,7 +11,7 @@ def handle_file(file_name):
             text += row
 
         site = BeautifulSoup(text, 'html.parser')
-        products = site.find_all("div", attrs={'class': 'block visible'}) + site.find_all("div", attrs={'class': 'block loaded visible'})
+        products = site.find_all("div", attrs={'class': 'page-shop'}) + site.find_all("div", attrs={'class': 'block loaded visible'}) + site.find_all("div", attrs={'class': 'block visible'})
         item = dict()
         for product in products:
             item['title'] = product.find_all("a")[0].get_text().strip()
@@ -30,7 +30,6 @@ del items[-1]
 
 #Сортировка по price
 
-print(items)
 items = sorted(items, key=lambda x: x['price'], reverse=True)
 
 #Определяем количество продуктов стоимость которых больше 500р
@@ -56,18 +55,3 @@ print("Максимальное значение Price:", np.max(price_array))
 print("Минимальное значение Price:", np.min(price_array))
 print("Сумма значений Price:", np.sum(price_array))
 print("Среднее арифметическое значений Price:", np.mean(price_array))
-
-#Частота меток title
-
-title_array = np.array([item['title'] for item in items])
-
-word_frequency = {}
-for word in title_array:
-    if word in word_frequency:
-        word_frequency[word] += 1
-    else:
-        word_frequency[word] = 1
-
-sorted_word_frequency = sorted(word_frequency.items(), key=lambda x: x[1], reverse=True)
-
-print(sorted_word_frequency)
