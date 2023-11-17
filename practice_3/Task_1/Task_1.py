@@ -34,10 +34,14 @@ for i in range(1,1000):
     result = handle_file(file_name)
     items.append(result)
 
+#Сортировка по views
+
 items = sorted(items, key=lambda x: x['views'], reverse = True)
 
 with open("result_all_1.json", "w", encoding="utf-8") as f:
     f.write(json.dumps(items))
+
+#Определяем количество строений рейтинг которых больше 2
 
 filtered_items = []
 for building in items:
@@ -47,12 +51,16 @@ for building in items:
 print("Всего элементов:", len(items))
 print("Фильтрация элементов:", len(filtered_items))
 
+#Статистические характеристики для views
+
 views_array = np.array([item['views'] for item in items])
 
 print("Максимальное значение Views:", np.max(views_array))
 print("Минимальное значение Views:", np.min(views_array))
 print("Сумма значений Views:", np.sum(views_array))
 print("Среднее арифметическое значений Views:", np.mean(views_array))
+
+#Частота меток city
 
 city_array = np.array([item['city'] for item in items])
 
