@@ -28,7 +28,6 @@ for i in range(1, 6):
     items.append(result)
 del items[-1]
 del items[-1]
-print(items)
 #Сортировка по price
 
 items = sorted(items, key=lambda x: x['price'], reverse=True)
