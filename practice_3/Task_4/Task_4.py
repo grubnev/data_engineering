@@ -38,8 +38,8 @@ for i in range(1,101):
     result = handle_file(file_name)
     items.append(result)
 
-with open("result_all_1.json", "w", encoding="utf-8") as f:
-    f.write(json.dumps(items))
+with open("result_all_4.json", "w", encoding="utf-8") as f:
+    f.write(json.dumps(items, ensure_ascii=False))
 
 #Сортируем по полю rating
 

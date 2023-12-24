@@ -28,7 +28,7 @@ for i in range(1,501):
     items.append(result)
 
 with open("result_all_3.json", "w", encoding="utf-8") as f:
-    f.write(json.dumps(items))
+    f.write(json.dumps(items, ensure_ascii=False))
 
 #Сортировка по spectral-class
 

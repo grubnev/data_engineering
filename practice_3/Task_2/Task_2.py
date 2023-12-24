@@ -47,11 +47,11 @@ for product in items:
 print("Колличество всех продуктов", len(items))
 print("Колличество отсортированных продуктов", len(filtered_items))
 
-with open("result_filtred_1.json", "w", encoding="utf-8") as f:
-    f.write(json.dumps(filtered_items))
+with open("result_filtred_2.json", "w", encoding="utf-8") as f:
+    f.write(json.dumps(filtered_items, ensure_ascii=False))
 
-with open("result_all_1.json", "w", encoding="utf-8") as f:
-    f.write(json.dumps(items))
+with open("result_all_2.json", "w", encoding="utf-8") as f:
+    f.write(json.dumps(items, ensure_ascii=False))
 
 #Статистические характеристики для radius
 

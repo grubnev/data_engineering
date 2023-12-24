@@ -39,7 +39,7 @@ for i in range(1,1000):
 items = sorted(items, key=lambda x: x['views'], reverse = True)
 
 with open("result_all_1.json", "w", encoding="utf-8") as f:
-    f.write(json.dumps(items))
+    f.write(json.dumps(items, ensure_ascii=False))
 
 #Определяем количество строений рейтинг которых больше 2
 
@@ -54,6 +54,13 @@ print("Фильтрация элементов:", len(filtered_items))
 #Статистические характеристики для views
 
 views_array = np.array([item['views'] for item in items])
+
+views_stats = {
+    "max_views": np.max(views_array),
+    "min_views": np.min(views_array),
+    "sum_views": np.sum(views_array),
+    "mean_views": np.mean(views_array)
+}
 
 print("Максимальное значение Views:", np.max(views_array))
 print("Минимальное значение Views:", np.min(views_array))
