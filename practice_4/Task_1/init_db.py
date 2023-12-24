@@ -1,4 +1,4 @@
-
+"""
 CREATE TABLE Books (
     id             INTEGER    PRIMARY KEY AUTOINCREMENT,
     title          TEXT (256),
@@ -10,3 +10,4 @@ CREATE TABLE Books (
     rating         REAL,
     views          INTEGER
 );
+"""
