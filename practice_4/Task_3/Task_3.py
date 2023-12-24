@@ -108,9 +108,8 @@ print(lead_msgpack_data(file_name_2)[0].keys())
 items_1 = load_pkl_data(file_name_1)
 items_2 = lead_msgpack_data(file_name_2)
 
-conn = sqlite3.connect('Task_3.db')
-c = conn.cursor()
 db = sqlite3.connect('Task_3.db')
+c = db.cursor()
 
 #insert_pkl_data(db, items_1)
 #insert_msgpack_data(db, items_2)
