@@ -40,17 +40,20 @@ for star in items:
     if star['radius'] > 900000000:
         filtered_items.append(star)
 
-print("Колличество всех продуктов", len(items))
-print("Колличество отсортированных продуктов", len(filtered_items))
+print("Колличество всех звезд", len(items))
+print("Колличество отсортированных звезд", len(filtered_items))
 
 #Статистические характеристики для radius
 
 radius_array = np.array([item['radius'] for item in items])
-
-print("Максимальное значение Radius:", np.max(radius_array))
-print("Минимальное значение Radius:", np.min(radius_array))
-print("Сумма значений Radius:", np.sum(radius_array))
-print("Среднее арифметическое значений Radius:", np.mean(radius_array))
+radius_stats = {
+    "Максимальное значение Radius": int(np.max(radius_array)),
+    "Минимальное значение Radius": int(np.min(radius_array)),
+    "Сумма значений Radius": int(np.sum(radius_array)),
+    "Среднее арифметическое значений Radius": int(np.mean(radius_array))
+}
+with open('radius_stats_3.json', 'w', encoding="utf-8") as f:
+    json.dump(radius_stats, f, indent=4, ensure_ascii=False)
 
 #Частота меток spectral-class
 
@@ -64,5 +67,6 @@ for word in name_array:
         word_frequency[word] = 1
 
 sorted_word_frequency = sorted(word_frequency.items(), key=lambda x: x[1], reverse=True)
-
+with open('sorted_word_frequency_3.json', 'w', encoding="utf-8") as f:
+    json.dump(sorted_word_frequency, f, indent=4, ensure_ascii=False)
 print(sorted_word_frequency)

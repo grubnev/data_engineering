@@ -53,14 +53,19 @@ with open("result_filtred_2.json", "w", encoding="utf-8") as f:
 with open("result_all_2.json", "w", encoding="utf-8") as f:
     f.write(json.dumps(items, ensure_ascii=False))
 
-#Статистические характеристики для radius
+#Статистические характеристики для price
 
 price_array = np.array([item['price'] for item in items])
 
-print("Максимальное значение Price:", np.max(price_array))
-print("Минимальное значение Price:", np.min(price_array))
-print("Сумма значений Price:", np.sum(price_array))
-print("Среднее арифметическое значений Price:", np.mean(price_array))
+price_stats = {
+    "Максимальное значение Price": int(np.max(price_array)),
+    "Минимальное значение Price": int(np.min(price_array)),
+    "Сумма значений Price": int(np.sum(price_array)),
+    "Среднее арифметическое значений Price": int(np.mean(price_array))
+}
+
+with open('price_stats_2.json', 'w', encoding="utf-8") as f:
+    json.dump(price_stats, f, indent=4, ensure_ascii=False)
 
 #Частота меток title
 
@@ -74,5 +79,7 @@ for word in title_array:
         word_frequency[word] = 1
 
 sorted_word_frequency = sorted(word_frequency.items(), key=lambda x: x[1], reverse=True)
+with open('sorted_word_frequency_2.json', 'w', encoding="utf-8") as f:
+    json.dump(sorted_word_frequency, f, indent=4, ensure_ascii=False)
 
 print(sorted_word_frequency)

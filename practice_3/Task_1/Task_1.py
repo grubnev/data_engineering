@@ -56,16 +56,14 @@ print("Фильтрация элементов:", len(filtered_items))
 views_array = np.array([item['views'] for item in items])
 
 views_stats = {
-    "max_views": np.max(views_array),
-    "min_views": np.min(views_array),
-    "sum_views": np.sum(views_array),
-    "mean_views": np.mean(views_array)
+    "max_views": int(np.max(views_array)),
+    "min_views": int(np.min(views_array)),
+    "sum_views": int(np.sum(views_array)),
+    "mean_views": int(np.mean(views_array))
 }
 
-print("Максимальное значение Views:", np.max(views_array))
-print("Минимальное значение Views:", np.min(views_array))
-print("Сумма значений Views:", np.sum(views_array))
-print("Среднее арифметическое значений Views:", np.mean(views_array))
+with open('views_stats_1.json', 'w', encoding="utf-8") as f:
+    json.dump(views_stats, f, indent=4, ensure_ascii=False)
 
 #Частота меток city
 
@@ -79,6 +77,9 @@ for word in city_array:
         word_frequency[word] = 1
 
 sorted_word_frequency = sorted(word_frequency.items(), key=lambda x: x[1], reverse=True)
+
+with open("sorted_word_frequency_1.json", "w", encoding="utf-8") as f:
+    f.write(json.dumps(sorted_word_frequency, ensure_ascii=False))
 
 print(sorted_word_frequency)
 
