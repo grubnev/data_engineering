@@ -1,0 +1,416 @@
+[
+    {
+        "artist": "t.A.T.u.",
+        "song": "All The Things She Said",
+        "duration_ms": 214440,
+        "year": 2020,
+        "tempo": 179.92,
+        "genre": "pop",
+        "acousticness": 0.0411
+    },
+    {
+        "artist": "Will Smith",
+        "song": "Switch",
+        "duration_ms": 197666,
+        "year": 2020,
+        "tempo": 102.516,
+        "genre": "hip hop, pop",
+        "acousticness": 0.0107
+    },
+    {
+        "artist": "NSG",
+        "song": "Options",
+        "duration_ms": 240081,
+        "year": 2020,
+        "tempo": 101.993,
+        "genre": "World/Traditional, hip hop",
+        "acousticness": 0.389
+    },
+    {
+        "artist": "Lil Tecca",
+        "song": "Ransom",
+        "duration_ms": 131240,
+        "year": 2019,
+        "tempo": 179.974,
+        "genre": "hip hop",
+        "acousticness": 0.0204
+    },
+    {
+        "artist": "Saweetie",
+        "song": "My Type",
+        "duration_ms": 126446,
+        "year": 2019,
+        "tempo": 105.038,
+        "genre": "hip hop, pop, R&B",
+        "acousticness": 0.000677
+    },
+    {
+        "artist": "AJ Tracey",
+        "song": "Ladbroke Grove",
+        "duration_ms": 190537,
+        "year": 2019,
+        "tempo": 133.986,
+        "genre": "hip hop, Dance/Electronic",
+        "acousticness": 0.0939
+    },
+    {
+        "artist": "Regard",
+        "song": "Ride It",
+        "duration_ms": 157605,
+        "year": 2019,
+        "tempo": 117.948,
+        "genre": "pop, Dance/Electronic",
+        "acousticness": 0.177
+    },
+    {
+        "artist": "Ed Sheeran",
+        "song": "Cross Me (feat. Chance the Rapper & PnB Rock)",
+        "duration_ms": 206186,
+        "year": 2019,
+        "tempo": 95.005,
+        "genre": "pop",
+        "acousticness": 0.214
+    },
+    {
+        "artist": "Gesaffelstein",
+        "song": "Lost in the Fire (feat. The Weeknd)",
+        "duration_ms": 202093,
+        "year": 2019,
+        "tempo": 100.966,
+        "genre": "Dance/Electronic",
+        "acousticness": 0.0933
+    },
+    {
+        "artist": "Hinder",
+        "song": "Better Than Me",
+        "duration_ms": 223533,
+        "year": 2019,
+        "tempo": 139.913,
+        "genre": "pop, rock, metal",
+        "acousticness": 0.205
+    },
+    {
+        "artist": "Lauv",
+        "song": "i'm so tired...",
+        "duration_ms": 162582,
+        "year": 2019,
+        "tempo": 102.211,
+        "genre": "pop, Dance/Electronic",
+        "acousticness": 0.176
+    },
+    {
+        "artist": "Stormzy",
+        "song": "Vossi Bop",
+        "duration_ms": 196266,
+        "year": 2019,
+        "tempo": 188.115,
+        "genre": "hip hop, Dance/Electronic",
+        "acousticness": 0.13
+    },
+    {
+        "artist": "Lil Nas X",
+        "song": "Old Town Road - Remix",
+        "duration_ms": 157066,
+        "year": 2019,
+        "tempo": 136.041,
+        "genre": "hip hop, pop",
+        "acousticness": 0.0533
+    },
+    {
+        "artist": "Juice WRLD",
+        "song": "Robbery",
+        "duration_ms": 240050,
+        "year": 2019,
+        "tempo": 159.966,
+        "genre": "hip hop",
+        "acousticness": 0.328
+    },
+    {
+        "artist": "Post Malone",
+        "song": "Sunflower - Spider-Man: Into the Spider-Verse",
+        "duration_ms": 157560,
+        "year": 2019,
+        "tempo": 89.96,
+        "genre": "hip hop",
+        "acousticness": 0.533
+    },
+    {
+        "artist": "Doja Cat",
+        "song": "Juicy",
+        "duration_ms": 202333,
+        "year": 2019,
+        "tempo": 170.037,
+        "genre": "pop",
+        "acousticness": 0.0856
+    },
+    {
+        "artist": "Megan Thee Stallion",
+        "song": "Hot Girl Summer (feat. Nicki Minaj & Ty Dolla $ign)",
+        "duration_ms": 199427,
+        "year": 2019,
+        "tempo": 98.985,
+        "genre": "hip hop, pop, R&B",
+        "acousticness": 0.00485
+    },
+    {
+        "artist": "Wiley",
+        "song": "Boasty (feat. Idris Elba)",
+        "duration_ms": 177185,
+        "year": 2019,
+        "tempo": 102.958,
+        "genre": "hip hop, Dance/Electronic",
+        "acousticness": 0.00915
+    },
+    {
+        "artist": "Ariana Grande",
+        "song": "7 rings",
+        "duration_ms": 178626,
+        "year": 2019,
+        "tempo": 140.048,
+        "genre": "pop",
+        "acousticness": 0.592
+    },
+    {
+        "artist": "Avicii",
+        "song": "SOS (feat. Aloe Blacc)",
+        "duration_ms": 157202,
+        "year": 2019,
+        "tempo": 100.001,
+        "genre": "pop, Dance/Electronic",
+        "acousticness": 0.272
+    },
+    {
+        "artist": "Sech",
+        "song": "Otro Trago",
+        "duration_ms": 225933,
+        "year": 2019,
+        "tempo": 176.044,
+        "genre": "latin",
+        "acousticness": 0.136
+    },
+    {
+        "artist": "Offset",
+        "song": "Clout (feat. Cardi B)",
+        "duration_ms": 205803,
+        "year": 2019,
+        "tempo": 140.022,
+        "genre": "hip hop, pop",
+        "acousticness": 0.228
+    },
+    {
+        "artist": "iann dior",
+        "song": "gone girl",
+        "duration_ms": 136568,
+        "year": 2019,
+        "tempo": 94.956,
+        "genre": "hip hop, pop",
+        "acousticness": 0.162
+    },
+    {
+        "artist": "Ariana Grande",
+        "song": "break up with your girlfriend, i'm bored",
+        "duration_ms": 190440,
+        "year": 2019,
+        "tempo": 169.999,
+        "genre": "pop",
+        "acousticness": 0.0421
+    },
+    {
+        "artist": "Russ Millions",
+        "song": "Keisha & Becky - Remix",
+        "duration_ms": 252906,
+        "year": 2019,
+        "tempo": 140.969,
+        "genre": "pop",
+        "acousticness": 0.251
+    },
+    {
+        "artist": "Anuel AA",
+        "song": "China",
+        "duration_ms": 301714,
+        "year": 2019,
+        "tempo": 105.027,
+        "genre": "latin",
+        "acousticness": 0.0846
+    },
+    {
+        "artist": "Marshmello",
+        "song": "One Thing Right",
+        "duration_ms": 181823,
+        "year": 2019,
+        "tempo": 88.042,
+        "genre": "pop, Dance/Electronic",
+        "acousticness": 0.0644
+    },
+    {
+        "artist": "Tones And I",
+        "song": "Dance Monkey",
+        "duration_ms": 209438,
+        "year": 2019,
+        "tempo": 98.027,
+        "genre": "pop",
+        "acousticness": 0.692
+    },
+    {
+        "artist": "Ashley O",
+        "song": "On A Roll",
+        "duration_ms": 154447,
+        "year": 2019,
+        "tempo": 125.011,
+        "genre": "set()",
+        "acousticness": 0.077
+    },
+    {
+        "artist": "Chris Brown",
+        "song": "Beautiful People",
+        "duration_ms": 225881,
+        "year": 2019,
+        "tempo": 127.898,
+        "genre": "hip hop, pop, R&B",
+        "acousticness": 0.0658
+    },
+    {
+        "artist": "Billie Eilish",
+        "song": "bury a friend",
+        "duration_ms": 193143,
+        "year": 2019,
+        "tempo": 120.046,
+        "genre": "pop, Dance/Electronic",
+        "acousticness": 0.74
+    },
+    {
+        "artist": "Ava Max",
+        "song": "So Am I",
+        "duration_ms": 183026,
+        "year": 2019,
+        "tempo": 130.089,
+        "genre": "pop",
+        "acousticness": 0.0737
+    },
+    {
+        "artist": "Young T & Bugsey",
+        "song": "Strike a Pose (feat. Aitch)",
+        "duration_ms": 214203,
+        "year": 2019,
+        "tempo": 137.776,
+        "genre": "hip hop",
+        "acousticness": 0.0107
+    },
+    {
+        "artist": "Lewis Capaldi",
+        "song": "Someone You Loved",
+        "duration_ms": 182160,
+        "year": 2019,
+        "tempo": 109.891,
+        "genre": "pop",
+        "acousticness": 0.751
+    },
+    {
+        "artist": "Polo G",
+        "song": "Pop Out (feat. Lil Tjay)",
+        "duration_ms": 166560,
+        "year": 2019,
+        "tempo": 168.112,
+        "genre": "hip hop",
+        "acousticness": 0.15
+    },
+    {
+        "artist": "Hinder",
+        "song": "Lips Of An Angel",
+        "duration_ms": 261053,
+        "year": 2019,
+        "tempo": 129.005,
+        "genre": "pop, rock, metal",
+        "acousticness": 0.0208
+    },
+    {
+        "artist": "Billie Eilish",
+        "song": "bad guy",
+        "duration_ms": 194087,
+        "year": 2019,
+        "tempo": 135.128,
+        "genre": "pop, Dance/Electronic",
+        "acousticness": 0.328
+    },
+    {
+        "artist": "Camila Cabello",
+        "song": "Liar",
+        "duration_ms": 207038,
+        "year": 2019,
+        "tempo": 98.016,
+        "genre": "pop",
+        "acousticness": 0.0169
+    },
+    {
+        "artist": "Drake",
+        "song": "Money In The Grave (Drake ft. Rick Ross)",
+        "duration_ms": 205426,
+        "year": 2019,
+        "tempo": 100.541,
+        "genre": "hip hop, pop, R&B",
+        "acousticness": 0.101
+    },
+    {
+        "artist": "Dua Lipa",
+        "song": "Don't Start Now",
+        "duration_ms": 183290,
+        "year": 2019,
+        "tempo": 123.941,
+        "genre": "pop",
+        "acousticness": 0.0125
+    },
+    {
+        "artist": "Angie Martinez",
+        "song": "If I Could Go! (feat. Lil' Mo & Sacario)",
+        "duration_ms": 244466,
+        "year": 2019,
+        "tempo": 195.685,
+        "genre": "pop",
+        "acousticness": 0.171
+    },
+    {
+        "artist": "Kehlani",
+        "song": "Nights Like This (feat. Ty Dolla $ign)",
+        "duration_ms": 201787,
+        "year": 2019,
+        "tempo": 146.163,
+        "genre": "hip hop, pop, R&B",
+        "acousticness": 0.367
+    },
+    {
+        "artist": "Daddy Yankee",
+        "song": "Con Calma",
+        "duration_ms": 193226,
+        "year": 2019,
+        "tempo": 93.989,
+        "genre": "latin",
+        "acousticness": 0.11
+    },
+    {
+        "artist": "Lil Nas X",
+        "song": "Old Town Road",
+        "duration_ms": 113000,
+        "year": 2019,
+        "tempo": 135.998,
+        "genre": "hip hop, pop",
+        "acousticness": 0.0578
+    },
+    {
+        "artist": "Aaliyah",
+        "song": "Rock The Boat",
+        "duration_ms": 275026,
+        "year": 2019,
+        "tempo": 92.988,
+        "genre": "hip hop, pop, R&B",
+        "acousticness": 0.0688
+    },
+    {
+        "artist": "Tyler, The Creator",
+        "song": "EARFQUAKE",
+        "duration_ms": 190066,
+        "year": 2019,
+        "tempo": 79.635,
+        "genre": "hip hop",
+        "acousticness": 0.23
+    }
+]

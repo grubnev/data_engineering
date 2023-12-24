@@ -85,7 +85,7 @@ data = parse_data(file_name)
 db = connect_to_db('task_1.db')
 #insert_data(db, data)
 
-# вывод первых 46 отсортированных строк из таблицы в json
+# вывод первых 46 отсортированных строк по году в json
 result_get_top_by_views = get_top_by_views(db, 46)
 with open('result_get_top_by_views_1.json', 'w', encoding="utf-8") as f:
     json.dump(result_get_top_by_views, f, indent=4, ensure_ascii=False)
