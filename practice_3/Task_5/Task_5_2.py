@@ -11,11 +11,11 @@ def handle_file(file_name):
             text += row
 
         site = BeautifulSoup(text, 'html.parser')
-        products = site.find_all("div", attrs={'class': 'page-shop'}) + site.find_all("div", attrs={'class': 'block loaded visible'}) + site.find_all("div", attrs={'class': 'block visible'})
+        products = site.find_all("div", attrs={'class': 'page-shop'})
         item = dict()
         for product in products:
             item['title'] = product.find_all("a")[0].get_text().strip()
-            item['price'] = int(product.find_all("div", attrs={'class': 'price'})[0].get_text().replace(" Р.", "").strip())
+            item['price'] = int(product.find_all("div", attrs={'class': 'price'})[0].get_text().replace(" ₽ ", "").strip())
             item['delivery'] = product.find_all("div", attrs={'class': 'delivery'})[0].get_text().replace('<span class="icon-truck"></span>', "").strip()
 
             items.append(item)

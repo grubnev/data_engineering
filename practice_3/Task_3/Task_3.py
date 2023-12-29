@@ -69,4 +69,3 @@ for word in name_array:
 sorted_word_frequency = sorted(word_frequency.items(), key=lambda x: x[1], reverse=True)
 with open('sorted_word_frequency_3.json', 'w', encoding="utf-8") as f:
     json.dump(sorted_word_frequency, f, indent=4, ensure_ascii=False)
-print(sorted_word_frequency)
