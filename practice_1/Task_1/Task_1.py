@@ -1,25 +1,27 @@
-def count_word_frequency(filename):
-    word_frequency = {}
+filename = 'text_1_var_36'
+with open(filename) as file:
+    lines = file.readlines()
 
-    with open(filename, 'r', encoding='utf-8') as file:
-        text = file.read()
-        words = text.split()
+word_stat = dict()
 
-        for word in words:
-            word = word.strip('.,!?()[]{}"\'').lower()
+for line in lines:
+    row = (line.strip()
+           .replace("!", " ")
+           .replace("?", " ")
+           .replace(",", " ")
+           .replace(".", " ")
+           .strip())
 
-            if word in word_frequency:
-                word_frequency[word] += 1
-            else:
-                word_frequency[word] = 1
+    words = row.split(" ")
 
-    sorted_word_frequency = sorted(word_frequency.items(), key=lambda x: x[1], reverse=True)
+    for word in words:
+        if word in word_stat:
+            word_stat[word] += 1
+        else:
+            word_stat[word] = 1
 
-    return sorted_word_frequency
+word_stat = (dict(sorted(word_stat.items(), reverse = True, key = lambda item: item[1])))
 
-
-word_frequency = count_word_frequency('text_1_var_36')
-
-with open('result_1.txt', 'w', encoding='utf-8') as outfile:
-    for word, frequency in word_frequency:
-        outfile.write(f"{word}:{frequency}\n")
+with open('result_1.txt', 'w') as result:
+    for key, value in word_stat.items():
+        result.write(key + ":" + str(value) + "\n")
