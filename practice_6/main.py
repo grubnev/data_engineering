@@ -189,7 +189,7 @@ print(need_column)
 # print(mem_usage(read_and_optimized))
 
 
-# Если много данных, можем выборочно держать во временной памяти
+# Если много данных, можем выборочно держать во временной памяти0
 has_header=True
 for chunk in pd.read_csv(file_name,
                          usecols=lambda x: x in column_names,

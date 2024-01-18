@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import pandas as pd
 import matplotlib.pyplot as plt
 import json
@@ -6,7 +7,7 @@ import seaborn as sns
 import os
 
 pd.set_option("display.max_rows", 20, "display.max_columns", 60)
-
+# Ноутбук не вывозит рисовку почти никаких графиков(1
 def read_file(file_name):
     return pd.read_csv(file_name)
 
@@ -25,53 +26,51 @@ def read_types(file_name):
 
 need_dtypes = read_types("dtypes.json")
 dataset = pd.read_csv("df.csv",
-                      usecols=lambda x: x in need_dtypes.keys(),
-                      dtype=need_dtypes,
-                      parse_dates=['date'])
+                      usecols=lambda x: x in need_dtypes.keys())
 #dataset.info(memory_usage='deep')
 
 
-plt.figure(figsize=(10,5))
-plt.ticklabel_format(style='plain')
-plt.plot(dataset.groupby(["day_of_week"])['length_minutes'].sum().values, marker='.',)
-plt.title('Продолжительность игр по дням недели')
-plt.xlabel('День недели')
-plt.ylabel('Продолжительность')
-plt.savefig('linear.png')
+# plt.figure(figsize=(10, 5))
+# plt.pie(dataset['CANCELLATION_REASON'].value_counts(), labels=dataset['CANCELLATION_REASON'].value_counts().index, autopct='%1.1f%%')
+# plt.title('Наиболее частые причины отмены рейса')
+# plt.axis('equal')
+# plt.savefig('pie_chart.png')
+#
+#
+# plt.figure(figsize=(10, 6))
+# sns.scatterplot(x="DEPARTURE_DELAY", y="ARRIVAL_DELAY", data=dataset)
+# plt.title('Зависимость задержки отправления от задержки прибытия')
+# plt.xlabel('Departure Delay')
+# plt.ylabel('Arrival Delay')
+# plt.savefig('scatter_plot.png')
+#
+#
+# plt.figure(figsize=(10,6))
+# sns.barplot(x='DEPARTURE_DELAY', y='AIRLINE', data=dataset)
+# plt.title('Авиакомпании самыми сильными задержками в отправлении')
+# plt.xlabel('Departure Delay')
+# plt.ylabel('Airlines')
+# plt.savefig('bar_plot.png')
+
+# top_airports = dataset['DESTINATION_AIRPORT'].value_counts().head(15)
+# top_airports_names = top_airports.index
+# filtered_dataset = dataset[dataset['DESTINATION_AIRPORT'].isin(top_airports_names)]
+#
+# plt.figure(figsize=(8, 8))
+# sns.countplot(
+#     x='DESTINATION_AIRPORT',
+#     data=filtered_dataset,
+#     order=top_airports_names  )
+# plt.title('Топ 15 аэропортов по прибытию')
+# plt.xticks(rotation=90)
+# plt.savefig('count_plot.png')
 
 
-plt.figure(figsize=(10, 5))
-sns.barplot(x='day_of_week', y='number_of_game', data=dataset, errorbar=None)
-plt.title('Количество игр по дням недели')
-plt.xlabel('День недели')
-plt.ylabel('Количество игр')
-plt.xticks(rotation=45)
-plt.tight_layout()
-plt.savefig('bar_plot.png')
-
-
-plt.figure(figsize=(10, 10))
-sns.heatmap(dataset[['v_hits', 'h_hits', 'h_walks', 'h_errors']], cmap='coolwarm')
-plt.title('Heatmap по статистике игр')
-plt.xlabel('Home команда')
-plt.ylabel('Visitor команда')
-plt.tight_layout()
-plt.savefig('heatmap.png')
 
 plt.figure(figsize=(10, 6))
-plt.scatter(dataset['h_hits'], dataset['v_hits'])
-plt.title('Home Hits vs Visitor Hits')
-plt.xlabel('Home Hits')
-plt.ylabel('Visitor Hits')
-plt.tight_layout()
-plt.savefig('scatter_plot.png')
-
-plt.figure(figsize=(6, 6))
-plt.pie(dataset['day_of_week'].value_counts(), labels=dataset['day_of_week'].unique(), autopct='%1.1f%%')
-plt.title('Распределение по дням недели')
-plt.axis('equal')
-plt.savefig('pie_chart.png')
-
-
-
-plt.show()
+sns.histplot(dataset['DEPARTURE_DELAY'], bins=50, kde=False)
+plt.title('Распределение по опоздания')
+plt.xlabel('Departure Delay (minutes)')
+plt.ylabel('Frequency')
+plt.xlim(-50, 300)
+plt.savefig('hist.png')
