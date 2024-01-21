@@ -93,24 +93,24 @@ def opt_float(df):
 
 ###-------------------------------------------------------------------------------------###
 
-# 1 датасет
-file_name="data\[1]game_logs.csv"
-column_names = ['date', 'number_of_game', 'day_of_week', 'park_id', 'v_manager_name', 'length_minutes', 'v_hits', 'h_hits', 'h_walks', 'h_errors']
+# # 1 датасет
+# file_name="data/[1]game_logs.csv"
+# column_names = ['date', 'number_of_game', 'day_of_week', 'park_id', 'v_manager_name', 'length_minutes', 'v_hits', 'h_hits', 'h_walks', 'h_errors']
 
 # #2 датасет
-# file_name="data\CIS_Automotive_Kaggle_Sample.csv"
+# file_name="data/CIS_Automotive_Kaggle_Sample.csv"
 # column_names = ['brandName', 'vf_ModelYear', 'isNew', 'askPrice', 'color', 'vf_Model', 'modelName', 'vf_Seats', 'vf_Turbo', 'vf_TrailerType']
 
 # #3 датасет
-# file_name="data\[3]flights.csv"
+# file_name="data/[3]flights.csv"
 # column_names = ['DEPARTURE_DELAY', 'DEPARTURE_TIME', 'TAXI_OUT', 'AIR_TIME', 'ARRIVAL_TIME', 'ARRIVAL_DELAY', 'DESTINATION_AIRPORT', 'YEAR', 'AIRLINE', 'CANCELLATION_REASON']
 
 # #4 датасет
-# file_name="data\[4]vacancies.csv.gz"
+# file_name="data/[4]vacancies.csv.gz"
 # column_names = ["accept_incomplete_resumes", "salary_from", "salary_to", "prof_classes_found", "experience_name", "area_name", "address_lat", "address_lng", "has_test"]
 
 # #5 датасет
-# file_name="data\[4]vacancies.csv.gz"
+# file_name="data/[5]asteroid.zip"
 # column_names =  ["full_name", "diameter", "class", "H", "albedo", "epoch_cal", "sigma_e", "sigma_a", "sigma_q", "sigma_i"]
 
 ###-------------------------------------------------------------------------------------###
