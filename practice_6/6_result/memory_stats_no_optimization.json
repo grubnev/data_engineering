@@ -1,0 +1,704 @@
+[
+  {
+    "column_name": "CBSA_Name",
+    "memory_abs": 15307,
+    "memory_per": 6.7032,
+    "dtype": "object"
+  },
+  {
+    "column_name": "CSA_Name",
+    "memory_abs": 14737,
+    "memory_per": 6.4533,
+    "dtype": "object"
+  },
+  {
+    "column_name": "OBJECTID",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "GEOID10",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "GEOID20",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "STATEFP",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "COUNTYFP",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "TRACTCE",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "BLKGRPCE",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "CSA",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "CBSA",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "CBSA_POP",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "CBSA_EMP",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "CBSA_WRK",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "Ac_Total",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "Ac_Water",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "Ac_Land",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "Ac_Unpr",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "TotPop",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "CountHU",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "HH",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "P_WrkAge",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "AutoOwn0",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "Pct_AO0",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "AutoOwn1",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "Pct_AO1",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "AutoOwn2p",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "Pct_AO2p",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "Workers",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "R_LowWageWk",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "R_MedWageWk",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "R_HiWageWk",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "R_PCTLOWWAGE",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "TotEmp",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E5_Ret",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E5_Off",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E5_Ind",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E5_Svc",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E5_Ent",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E8_Ret",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E8_off",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E8_Ind",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E8_Svc",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E8_Ent",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E8_Ed",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E8_Hlth",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E8_Pub",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E_LowWageWk",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E_MedWageWk",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E_HiWageWk",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "E_PctLowWage",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1A",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1B",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1C",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1C5_RET",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1C5_OFF",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1C5_IND",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1C5_SVC",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1C5_ENT",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1C8_RET",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1C8_OFF",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1C8_IND",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1C8_SVC",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1C8_ENT",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1C8_ED",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1C8_HLTH",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1C8_PUB",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1D",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D1_FLAG",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "D2A_JPHH",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D2B_E5MIX",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D2B_E5MIXA",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D2B_E8MIX",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D2B_E8MIXA",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D2A_EPHHM",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D2C_TRPMX1",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D2C_TRPMX2",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D2C_TRIPEQ",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D2R_JOBPOP",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D2R_WRKEMP",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D2A_WRKEMP",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D2C_WREMLX",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D3A",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D3AAO",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D3AMM",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D3APO",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D3B",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D3BAO",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D3BMM3",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D3BMM4",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D3BPO3",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D3BPO4",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D4A",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D4B025",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D4B050",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D4C",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D4D",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D4E",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D5AR",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "D5AE",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "D5BR",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "D5BE",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "D5CR",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D5CRI",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D5CE",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D5CEI",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D5DR",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D5DRI",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D5DE",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D5DEI",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "D2A_Ranked",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "D2B_Ranked",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "D3B_Ranked",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "D4A_Ranked",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "NatWalkInd",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "Shape_Length",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "Shape_Area",
+    "memory_abs": 1724,
+    "memory_per": 0.7552,
+    "dtype": "float64"
+  }
+]

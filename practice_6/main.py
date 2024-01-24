@@ -32,6 +32,7 @@ def get_memory_stat_by_column(df):
     column_stat.sort(key=lambda x: x['memory_abs'], reverse=True)
     for column in column_stat:
         print(f"{column['column_name']:30}: {column['memory_abs']:10} кб: {column['memory_per']:10}%: {column['dtype']}")
+    return column_stat
 
 def mem_usage(pandas_obj):
     if isinstance(pandas_obj, pd.DataFrame):
@@ -98,8 +99,8 @@ def opt_float(df):
 # column_names = ['date', 'number_of_game', 'day_of_week', 'park_id', 'v_manager_name', 'length_minutes', 'v_hits', 'h_hits', 'h_walks', 'h_errors']
 
 # #2 датасет
-# file_name="data/CIS_Automotive_Kaggle_Sample.csv"
-# column_names = ['brandName', 'vf_ModelYear', 'isNew', 'askPrice', 'color', 'vf_Model', 'modelName', 'vf_Seats', 'vf_Turbo', 'vf_TrailerType']
+# file_name="data/[2]automotive.csv.zip"
+# column_names = ["firstSeen", "brandName", "modelName", "askPrice", "isNew", "vf_Wheels", "vf_Seats", "vf_Windows", "vf_WheelSizeRear", "vf_WheelBaseShort"]
 
 # #3 датасет
 # file_name="data/[3]flights.csv"
@@ -107,11 +108,16 @@ def opt_float(df):
 
 # #4 датасет
 # file_name="data/[4]vacancies.csv.gz"
-# column_names = ["accept_incomplete_resumes", "salary_from", "salary_to", "prof_classes_found", "experience_name", "area_name", "address_lat", "address_lng", "has_test"]
+# column_names =  ['salary_from', 'salary_to', 'employer_id', 'archived', 'salary_gross', 'response_letter_required', 'premium', 'area_id', 'address_description', 'schedule_name']
 
 # #5 датасет
 # file_name="data/[5]asteroid.zip"
 # column_names =  ["full_name", "diameter", "class", "H", "albedo", "epoch_cal", "sigma_e", "sigma_a", "sigma_q", "sigma_i"]
+
+# #6 датасет
+# #Датасет скачан с https://catalog.data.gov/dataset/walkability-index1
+# file_name="data/EPA_SmartLocationDatabase_V3_Jan_2021_Final.csv"
+# column_names =  ["CSA", "Ac_Total", "CBSA_Name", "BLKGRPCE", "D2A_Ranked", "D2B_Ranked", "D3B_Ranked", "D4A_Ranked", "TRACTCE", "CountHU",]
 
 ###-------------------------------------------------------------------------------------###
 
@@ -139,7 +145,7 @@ print(mem_usage(optimized_dataset))
 optimized_dataset.info(memory_usage='deep')
 
 # Повторный анализ файла
-get_memory_stat_by_column(optimized_dataset)
+column_stat_optimized = get_memory_stat_by_column(optimized_dataset)
 opt_dtypes = optimized_dataset.dtypes
 
 # 10 колонок
@@ -170,25 +176,30 @@ for chunk in pd.read_csv(file_name,
     chunk.to_csv("df.csv", mode="a", header=has_header)
     has_header=False
 
-# #Сортировка
-# column_stat_sorted = sorted(column_stat, key=lambda x: x['memory_abs'], reverse=True)
-#
-# # исправление ошибки с int64
-# for column in column_stat_sorted:
-#     column['memory_abs'] = int(column['memory_abs'])
-#
-# output_file = "memory_stats_no_optimization.json"
-# with open(output_file, "w", encoding="utf-8") as json_file:
-#     json.dump(column_stat_sorted, json_file, ensure_ascii=False)
-#
-# for dtype in ['float', 'int', 'object']:
-#     selected_dtype=df.select_dtypes(include=[dtype])
-#     mean_usage_b=selected_dtype.memory_usage(deep=True).mean()
-#     mean_usage_mb=mean_usage_b/ 1024**2
-#     print("Использование памяти в среднем для {} столбцов: {:03.2f} MB".
-#           format(dtype, mean_usage_mb))
+#Сортировка не оптимизированных данных
+column_stat_sorted = sorted(column_stat, key=lambda x: x['memory_abs'], reverse=True)
+# исправление ошибки с int64
+for column in column_stat_sorted:
+    column['memory_abs'] = int(column['memory_abs'])
+with open("memory_stats_no_optimization.json", "w", encoding="utf-8") as json_file:
+    json.dump(column_stat_sorted, json_file, ensure_ascii=False, indent=2)
 
 
+#Сортировка оптимизированных данных
+column_stat_sorted_optimized = sorted(column_stat_optimized, key=lambda x: x['memory_abs'], reverse=True)
+# исправление ошибки с int64
+for column in column_stat_sorted_optimized:
+    column['memory_abs'] = int(column['memory_abs'])
+with open("memory_stats_optimization.json", "w", encoding="utf-8") as json_file:
+    json.dump(column_stat_sorted_optimized, json_file, ensure_ascii=False, indent=2)
+
+
+for dtype in ['float', 'int', 'object']:
+    selected_dtype=df.select_dtypes(include=[dtype])
+    mean_usage_b=selected_dtype.memory_usage(deep=True).mean()
+    mean_usage_mb=mean_usage_b/ 1024**2
+    print("Использование памяти в среднем для {} столбцов: {:03.2f} MB".
+          format(dtype, mean_usage_mb))
 
 converted_obj=pd.DataFrame()
 #dow=dataset.day_of_week
@@ -197,14 +208,10 @@ converted_obj=pd.DataFrame()
 print(mem_usage(df))
 
 
-
-
 # Использование памяти
 int_types=["uint8", "int8", "int16"]
 for it in int_types:
     print(np.iinfo(it))
-
-
 
 
 read_and_optimized=pd.read_csv(file_name,
@@ -212,5 +219,3 @@ read_and_optimized=pd.read_csv(file_name,
                                dtype=need_column)
 print(read_and_optimized.shape)
 print(mem_usage(read_and_optimized))
-
-

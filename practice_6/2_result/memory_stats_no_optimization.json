@@ -1,0 +1,938 @@
+[
+  {
+    "column_name": "vin",
+    "memory_abs": 628453,
+    "memory_per": 2.2395,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_VIN",
+    "memory_abs": 628453,
+    "memory_per": 2.2395,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_AirBagLocFront",
+    "memory_abs": 414898,
+    "memory_per": 1.4785,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_Manufacturer",
+    "memory_abs": 410065,
+    "memory_per": 1.4613,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_BodyClass",
+    "memory_abs": 409081,
+    "memory_per": 1.4578,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_VehicleType",
+    "memory_abs": 404282,
+    "memory_per": 1.4407,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_GVWR",
+    "memory_abs": 399596,
+    "memory_per": 1.424,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_AirBagLocSide",
+    "memory_abs": 370862,
+    "memory_per": 1.3216,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_TrailerBodyType",
+    "memory_abs": 350337,
+    "memory_per": 1.2485,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_TrailerType",
+    "memory_abs": 350336,
+    "memory_per": 1.2485,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_CustomMotorcycleType",
+    "memory_abs": 350260,
+    "memory_per": 1.2482,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_MotorcycleChassisType",
+    "memory_abs": 350258,
+    "memory_per": 1.2482,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_MotorcycleSuspensionType",
+    "memory_abs": 350258,
+    "memory_per": 1.2482,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_BusFloorConfigType",
+    "memory_abs": 349492,
+    "memory_per": 1.2454,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_BusType",
+    "memory_abs": 349492,
+    "memory_per": 1.2454,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_PlantCountry",
+    "memory_abs": 341267,
+    "memory_per": 1.2161,
+    "dtype": "object"
+  },
+  {
+    "column_name": "firstSeen",
+    "memory_abs": 328130,
+    "memory_per": 1.1693,
+    "dtype": "object"
+  },
+  {
+    "column_name": "lastSeen",
+    "memory_abs": 328130,
+    "memory_per": 1.1693,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_DriveType",
+    "memory_abs": 321327,
+    "memory_per": 1.1451,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_ActiveSafetySysNote",
+    "memory_abs": 318848,
+    "memory_per": 1.1362,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_OtherRestraintSystemInfo",
+    "memory_abs": 315348,
+    "memory_per": 1.1238,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_FuelTypePrimary",
+    "memory_abs": 314742,
+    "memory_per": 1.1216,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_PlantCompanyName",
+    "memory_abs": 313030,
+    "memory_per": 1.1155,
+    "dtype": "object"
+  },
+  {
+    "column_name": "modelName",
+    "memory_abs": 308521,
+    "memory_per": 1.0994,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_Model",
+    "memory_abs": 308521,
+    "memory_per": 1.0994,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_PlantCity",
+    "memory_abs": 307514,
+    "memory_per": 1.0959,
+    "dtype": "object"
+  },
+  {
+    "column_name": "brandName",
+    "memory_abs": 306355,
+    "memory_per": 1.0917,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_Make",
+    "memory_abs": 306355,
+    "memory_per": 1.0917,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_SeatBeltsAll",
+    "memory_abs": 297846,
+    "memory_per": 1.0614,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_EngineModel",
+    "memory_abs": 296999,
+    "memory_per": 1.0584,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_Series",
+    "memory_abs": 293436,
+    "memory_per": 1.0457,
+    "dtype": "object"
+  },
+  {
+    "column_name": "color",
+    "memory_abs": 288873,
+    "memory_per": 1.0294,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_TPMS",
+    "memory_abs": 284163,
+    "memory_per": 1.0126,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_PlantState",
+    "memory_abs": 278185,
+    "memory_per": 0.9913,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_AirBagLocCurtain",
+    "memory_abs": 274146,
+    "memory_per": 0.9769,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_SteeringLocation",
+    "memory_abs": 273174,
+    "memory_per": 0.9735,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_OtherEngineInfo",
+    "memory_abs": 270351,
+    "memory_per": 0.9634,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_BodyCabType",
+    "memory_abs": 269015,
+    "memory_per": 0.9587,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_ValveTrainDesign",
+    "memory_abs": 266123,
+    "memory_per": 0.9484,
+    "dtype": "object"
+  },
+  {
+    "column_name": "stockNum",
+    "memory_abs": 263307,
+    "memory_per": 0.9383,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_EngineConfiguration",
+    "memory_abs": 261861,
+    "memory_per": 0.9332,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_FuelInjectionType",
+    "memory_abs": 254421,
+    "memory_per": 0.9066,
+    "dtype": "object"
+  },
+  {
+    "column_name": "interiorColor",
+    "memory_abs": 254420,
+    "memory_per": 0.9066,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_EngineManufacturer",
+    "memory_abs": 242759,
+    "memory_per": 0.8651,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_AirBagLocKnee",
+    "memory_abs": 241614,
+    "memory_per": 0.861,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_BedType",
+    "memory_abs": 239800,
+    "memory_per": 0.8545,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_TransmissionStyle",
+    "memory_abs": 238830,
+    "memory_per": 0.8511,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_Trim",
+    "memory_abs": 236391,
+    "memory_per": 0.8424,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_BrakeSystemType",
+    "memory_abs": 236006,
+    "memory_per": 0.841,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_ABS",
+    "memory_abs": 234870,
+    "memory_per": 0.837,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_ESC",
+    "memory_abs": 231377,
+    "memory_per": 0.8245,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_RearVisibilitySystem",
+    "memory_abs": 230725,
+    "memory_per": 0.8222,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_TractionControl",
+    "memory_abs": 229111,
+    "memory_per": 0.8165,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_DynamicBrakeSupport",
+    "memory_abs": 227740,
+    "memory_per": 0.8116,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_SemiautomaticHeadlampBeamSwitching",
+    "memory_abs": 226563,
+    "memory_per": 0.8074,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_DaytimeRunningLight",
+    "memory_abs": 226220,
+    "memory_per": 0.8062,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_AutoReverseSystem",
+    "memory_abs": 226094,
+    "memory_per": 0.8057,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_Note",
+    "memory_abs": 225529,
+    "memory_per": 0.8037,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_KeylessIgnition",
+    "memory_abs": 215756,
+    "memory_per": 0.7689,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_BlindSpotMon",
+    "memory_abs": 212098,
+    "memory_per": 0.7558,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_ForwardCollisionWarning",
+    "memory_abs": 209021,
+    "memory_per": 0.7449,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_LaneDepartureWarning",
+    "memory_abs": 206955,
+    "memory_per": 0.7375,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_CIB",
+    "memory_abs": 206617,
+    "memory_per": 0.7363,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_CAN_AACN",
+    "memory_abs": 206253,
+    "memory_per": 0.735,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_LaneKeepSystem",
+    "memory_abs": 204006,
+    "memory_per": 0.727,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_AdaptiveCruiseControl",
+    "memory_abs": 201484,
+    "memory_per": 0.718,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_Turbo",
+    "memory_abs": 200986,
+    "memory_per": 0.7162,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_AdaptiveDrivingBeam",
+    "memory_abs": 198374,
+    "memory_per": 0.7069,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_MakeID",
+    "memory_abs": 194487,
+    "memory_per": 0.6931,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_FuelTypeSecondary",
+    "memory_abs": 193756,
+    "memory_per": 0.6905,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_PedestrianAutomaticEmergencyBraking",
+    "memory_abs": 191627,
+    "memory_per": 0.6829,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_AirBagLocSeatCushion",
+    "memory_abs": 190410,
+    "memory_per": 0.6785,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_CoolingType",
+    "memory_abs": 188732,
+    "memory_per": 0.6726,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_ParkAssist",
+    "memory_abs": 187917,
+    "memory_per": 0.6697,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_Pretensioner",
+    "memory_abs": 186146,
+    "memory_per": 0.6633,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_Series2",
+    "memory_abs": 184511,
+    "memory_per": 0.6575,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_EntertainmentSystem",
+    "memory_abs": 183826,
+    "memory_per": 0.6551,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_DestinationMarket",
+    "memory_abs": 183450,
+    "memory_per": 0.6537,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_BrakeSystemDesc",
+    "memory_abs": 183230,
+    "memory_per": 0.653,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_WheelBaseType",
+    "memory_abs": 182106,
+    "memory_per": 0.6489,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_ElectrificationLevel",
+    "memory_abs": 182040,
+    "memory_per": 0.6487,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_Trim2",
+    "memory_abs": 180962,
+    "memory_per": 0.6449,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_AdditionalErrorText",
+    "memory_abs": 180670,
+    "memory_per": 0.6438,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_AutomaticPedestrianAlertingSound",
+    "memory_abs": 180018,
+    "memory_per": 0.6415,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_EDR",
+    "memory_abs": 179525,
+    "memory_per": 0.6398,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_SuggestedVIN",
+    "memory_abs": 178930,
+    "memory_per": 0.6376,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_BatteryType",
+    "memory_abs": 178606,
+    "memory_per": 0.6365,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_BatteryInfo",
+    "memory_abs": 178521,
+    "memory_per": 0.6362,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_NCSANote",
+    "memory_abs": 178518,
+    "memory_per": 0.6362,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_RearCrossTrafficAlert",
+    "memory_abs": 178295,
+    "memory_per": 0.6354,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_LowerBeamHeadlampLightSource",
+    "memory_abs": 178250,
+    "memory_per": 0.6352,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_PossibleValues",
+    "memory_abs": 178197,
+    "memory_per": 0.635,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_AdaptiveHeadlights",
+    "memory_abs": 178052,
+    "memory_per": 0.6345,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_DriverAssist",
+    "memory_abs": 178052,
+    "memory_per": 0.6345,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_OtherMotorcycleInfo",
+    "memory_abs": 178043,
+    "memory_per": 0.6345,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_EVDriveUnit",
+    "memory_abs": 177992,
+    "memory_per": 0.6343,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_AxleConfiguration",
+    "memory_abs": 177989,
+    "memory_per": 0.6343,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_ChargerLevel",
+    "memory_abs": 177984,
+    "memory_per": 0.6343,
+    "dtype": "object"
+  },
+  {
+    "column_name": "vf_OtherTrailerInfo",
+    "memory_abs": 177969,
+    "memory_per": 0.6342,
+    "dtype": "object"
+  },
+  {
+    "column_name": "msrp",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "askPrice",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "mileage",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "dealerID",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "int64"
+  },
+  {
+    "column_name": "vf_Axles",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_BasePrice",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_BatteryA",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_BatteryA_to",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_BatteryCells",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_BatteryKWh",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_BatteryKWh_to",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_BatteryModules",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_BatteryPacks",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_BatteryV",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_BatteryV_to",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_BedLengthIN",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_BusLength",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_CashForClunkers",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_ChargerPowerKW",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_CurbWeightLB",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_DisplacementCC",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_DisplacementCI",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_DisplacementL",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_Doors",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_EngineCycles",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_EngineCylinders",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_EngineHP",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_EngineHP_to",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_EngineKW",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_GCWR",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_GCWR_to",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_GVWR_to",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_ManufacturerId",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_ModelID",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_ModelYear",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_NCSABodyType",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_NCSAMake",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_NCSAMapExcApprovedBy",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_NCSAMapExcApprovedOn",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_NCSAMappingException",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_NCSAModel",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_OtherBusInfo",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_SAEAutomationLevel",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_SAEAutomationLevel_to",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_SeatRows",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_Seats",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_TopSpeedMPH",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_TrackWidth",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_TrailerLength",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_TransmissionSpeeds",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_WheelBaseLong",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_WheelBaseShort",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_WheelSizeFront",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_WheelSizeRear",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_Wheels",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "vf_Windows",
+    "memory_abs": 44492,
+    "memory_per": 0.1586,
+    "dtype": "float64"
+  },
+  {
+    "column_name": "isNew",
+    "memory_abs": 5561,
+    "memory_per": 0.0198,
+    "dtype": "bool"
+  }
+]
