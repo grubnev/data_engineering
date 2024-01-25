@@ -10,14 +10,12 @@ def read_dtypes(file_name):
     dtypes = {}
     with open(file_name, "r") as f:
         dtypes = json.load(f)
-
         for key, value in dtypes.items():
             if value == "category":
                 dtypes[key] = pd.CategoricalDtype()
             else:
                 dtypes[key] = np.dtype(value)
     return dtypes
-
 
 def first_plot(dataset: pd.DataFrame):
     # Построение графика моделей по средней цене
@@ -26,12 +24,10 @@ def first_plot(dataset: pd.DataFrame):
                                                                                         title="Средние цены на автомобили разных моделей",
                                                                                         xlabel="Модели машин",
                                                                                         ylabel="Средняя цена автомобиля",
-                                                                                        fontsize=10
-                                                                                        )
+                                                                                        fontsize=10)
 
     plot.get_figure().savefig("1.png")
     plt.close()
-
 
 def second_plot(dataset: pd.DataFrame):
     plt.figure(figsize=(10, 5))
@@ -39,7 +35,6 @@ def second_plot(dataset: pd.DataFrame):
         plot = dataset[col].plot(bins=5, kind='hist', title="vf", alpha=0.7, legend=True)
     plot.get_figure().savefig("2.png")
     plt.close()
-
 
 def third_plot(dataset: pd.DataFrame):
     # Отношение новых к старым машинам
@@ -53,7 +48,6 @@ def third_plot(dataset: pd.DataFrame):
 
     plt.close()
 
-
 def forth_plot(dataset: pd.DataFrame):
     df = dataset.select_dtypes(include=[np.uint8, np.uint32, float])
     plt.figure(figsize=(16, 16))
@@ -62,7 +56,6 @@ def forth_plot(dataset: pd.DataFrame):
     plt.title("Корреляция", fontsize=20)
     plt.savefig("4.png")
     plt.close()
-
 
 def fifth_plot(dataset: pd.DataFrame):
     # Отношение цены новых автомобилей к старым

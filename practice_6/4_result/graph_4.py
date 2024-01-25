@@ -6,7 +6,6 @@ import numpy as np
 import seaborn as sns
 import os
 
-pd.set_option("display.max_rows", 20, "display.max_columns", 60)
 
 def read_file(file_name):
     return pd.read_csv(file_name)
@@ -15,7 +14,6 @@ def read_types(file_name):
     dtypes = {}
     with open(file_name, "r") as file:
         dtypes = json.load(file)
-
     for key in dtypes.keys():
         if dtypes[key] == 'category':
             dtypes[key] = pd.CategoricalDtype
@@ -34,7 +32,7 @@ dataset = pd.read_csv("df.csv",
 plt.figure(figsize=(8, 8))
 sns.countplot(x='premium', data=dataset)
 plt.title('Premium Distribution')
-plt.savefig('bar_chart.png')
+plt.savefig('1.png')
 
 plt.figure(figsize=(10, 5))
 plt.ticklabel_format(style='plain')
@@ -44,22 +42,18 @@ plt.xlabel('Number of Records')
 plt.ylabel('Salary')
 plt.title('Распределение зарплат')
 plt.legend()
-plt.savefig('line_chart.png')
-
+plt.savefig('2.png')
 
 plt.figure(figsize=(10,6))
 sns.scatterplot(data=dataset, x='employer_id', y='salary_from')
 plt.title('Связь между количеством сотрудников и зарплатой')
-plt.savefig('scatter_plot.png')
-
+plt.savefig('3.png')
 
 plt.figure(figsize=(6, 6))
 plt.pie(dataset['schedule_name'].value_counts(), labels=dataset['schedule_name'].unique(), autopct='%1.1f%%')
 plt.title('Форма работы')
 plt.axis('equal')
-plt.savefig('pie_chart.png')
-
-
+plt.savefig('4.png')
 
 # Drop the 'schedule_name' column
 dataset_no_schedule = dataset.drop(columns=['schedule_name'])
@@ -68,6 +62,6 @@ dataset_no_schedule = dataset.drop(columns=['schedule_name'])
 plt.figure(figsize=(10, 8))
 sns.heatmap(dataset_no_schedule.corr(), annot=True, fmt=".2f")
 plt.title('Матрица корреляции')
-plt.savefig('correlation.png')
+plt.savefig('5.png')
 
 plt.show()

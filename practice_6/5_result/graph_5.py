@@ -10,6 +10,7 @@ def read_dtypes(file_name):
     dtypes = {}
     with open(file_name, "r") as f:
         dtypes = json.load(f)
+
         for key, value in dtypes.items():
             if value == "category":
                 dtypes[key] = pd.CategoricalDtype()
@@ -21,7 +22,7 @@ def read_dtypes(file_name):
 def first_plot(dataset: pd.DataFrame):
     # Построение графика количество полетов по дням недели
     plt.figure(figsize=(15, 10))
-    plot = dataset.groupby(dataset["CSA"], observed=False)["TRACTCE"].mean().plot(title="Зависимость TRACTCE от CSA")
+    plot = dataset.groupby(dataset["class"])["albedo"].sum().plot(kind="bar", title="Сумма albedo по классу")
     plt.semilogy()
     plot.get_figure().savefig("1.png")
     plt.close()
@@ -29,9 +30,9 @@ def first_plot(dataset: pd.DataFrame):
 
 def second_plot(dataset: pd.DataFrame):
     plt.figure(figsize=(10, 5))
-    for col in dataset[[col for col in dataset.columns if "Ranked" in col]]:
-        plot = dataset[col].plot(bins=50, kind='hist', title="Ranked", alpha=0.7, legend=True)
-    # plt.semilogy()
+    for col in dataset[[col for col in dataset.columns if "sigma" in col]]:
+        plot = dataset[col].plot(bins=50, kind='hist', title="sigma", alpha=0.7, legend=True)
+    plt.semilogy()
     plot.get_figure().savefig("2.png")
     plt.close()
 
@@ -39,9 +40,9 @@ def second_plot(dataset: pd.DataFrame):
 def third_plot(dataset: pd.DataFrame):
     # Используемые классы в %
     plt.figure(figsize=(20, 10))
-    plot = dataset["CSA"].value_counts(bins=8).plot(kind='barh',
-                                                    fontsize=18)
-    plt.title('Количество CSA', fontsize=20)
+    plot = dataset["class"].value_counts().plot(kind='barh',
+                                                fontsize=18)
+    plt.title('Используемые классы в %', fontsize=20)
     plt.semilogx()
     plot.get_figure().savefig("3.png")
 
@@ -59,8 +60,7 @@ def forth_plot(dataset: pd.DataFrame):
 
 
 def fifth_plot(dataset: pd.DataFrame):
-    plt.figure(figsize=(10, 8))
-    sns.scatterplot(data=dataset, x='TRACTCE', y='CSA')
+    sns.scatterplot(data=dataset, x='diameter', y='albedo')
     plt.savefig("5.png")
 
 
@@ -76,6 +76,7 @@ def main():
     third_plot(dataset)
     forth_plot(dataset)
     fifth_plot(dataset)
+
 
 if __name__ == "__main__":
     main()
